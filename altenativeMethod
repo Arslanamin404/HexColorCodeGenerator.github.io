@@ -1,0 +1,20 @@
+// ALTERNATIVE METHOD
+
+const generateColor = () => {
+    
+    let symbols = '0123456789abcdef';
+    let randomNum = '';
+
+    for (i = 0; i < 6; i++) {
+        let randomIndex = Math.floor(Math.random() * symbols.length);
+        randomNum = randomNum + symbols[randomIndex];
+    }
+
+    const colorCode = "#" + randomNum;
+    console.log(colorCode)
+    
+    document.body.style.backgroundColor = colorCode;
+    output.innerText = colorCode;
+}
+btn.addEventListener('click',generateColor);
+generateColor();
