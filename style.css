@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bruno Ace SC", sans-serif;
+}
+body {
+  transition: 0.5s;
+}
+/* SideMenuNavBar */
+.toggleIcon{
+  font-size: 2.3rem;
+  margin: 10px;
+  cursor: pointer;
+  color:white;
+  background-color: black;
+  padding: 3px 10px;
+  border-radius: 5px;
+  position: absolute;
+  right: 5px;
+}
+.menu{
+  color: white;
+  width: 28.5%;
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  right: -28.5%;
+  transition: .3s;
+  
+}
+.menu .logo{
+  font-size: 1.45rem;
+  padding: 20px 5px;
+}
+.menu ul li {
+  list-style: none;
+  padding: 0 20px;
+  text-align: center;
+}
+.menu ul li a{
+  display: block;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.menu ul li a:hover{
+  text-decoration: underline;
+  color:orange;
+}
+.close{     
+  font-size: 2.8rem;
+  position: absolute;
+  right: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+.close:hover{
+  padding: 0px 5px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255,0.1);
+}
+.showMenu{
+  right:0%;
+  transition: .6s;
+}
+
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.child-container {
+  width: 30rem;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 2.6rem;
+  background-color: white;
+  text-align: center; /*Bex both are inline elements*/
+  box-shadow: 0 0 40px;
+}
+button {
+  margin-top: 35px;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+  display: block;
+  width: 100%;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgba(0, 0, 0, 0.89);
+}
+#outputContainer {
+  margin: 30px auto;
+  width: 18rem;
+  height: 6rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px;
+  transition: 0.5s;
+}
+.footer {
+  margin: 10px 0;
+  font-size: 0.9rem;
+}
+@media screen and (max-width: 768px) {
+  /* SideMenuNavBar */
+  .menu{
+    width: 80%;
+    right: -80%;
+}
+.menu .logo{
+  font-size: 1.1rem;
+  padding: 40px 5px 10px;
+}
+.showMenu{
+    right:0%;
+    transition: .6s;
+}
+.close{
+  font-size: 2.5rem;
+  margin: 5px 0px;
+}
+
+  .main {
+    height: 100%;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .child-container {
+    margin: 5rem 2rem;
+    width: auto;
+    font-size: 2rem;
+  }
+  button {
+    margin: 30px 0;
+    font-size: 1.2rem;
+    padding: 13px;
+  }
+  #outputContainer {
+    margin: 30px auto;
+  }
+  .footer {
+    margin: 10px 0;
+    font-size: 1.5rem;
+  }
+  .name {
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 0.9rem;
+    text-decoration: underline;
+  }
+}
